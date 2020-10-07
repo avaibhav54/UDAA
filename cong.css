@@ -1,0 +1,33 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(1.jpg);
+    height:100vh;
+    color:#fff;
+    background-size: cover;
+    background-position:center ;
+
+}
+
+
+a{
+    color:yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+}
+    .cong{
+        background: rgba(44,62,88,0.7);
+        padding: 4px;
+        height:300px;
+        margin-left: 180px;
+        margin:100px auto;
+        margin-top: 150px;
+        width:500px;
+        text-align: center;
+
+    }
+
+    h2{
+        margin-top: 50px;
+        margin-left:10px ;
+    }
