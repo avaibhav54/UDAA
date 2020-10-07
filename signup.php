@@ -83,7 +83,7 @@ if(isset($_POST['submit'])){
 <body>
 <div class="signup">
 
-    <form methood="POST" action="">
+    <form method="POST" action="">
         <h2 style="color:#fff;">Sign Up</h2>
         <input type="text" name="name" placeholder=" name"><br><br>
         <input type="text" name="phone" placeholder="phone number"><br><br>

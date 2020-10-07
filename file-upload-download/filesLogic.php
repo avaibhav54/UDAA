@@ -1,6 +1,6 @@
 <?php
 // connect to the database
-$conn = mysqli_connect('localhost', 'root', '', 'file management');
+$conn = mysqli_connect('localhost', 'root', '', 'project');
 $sql = "SELECT * FROM files";
 $result = mysqli_query($conn, $sql);
 
