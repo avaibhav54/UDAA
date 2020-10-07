@@ -92,7 +92,7 @@ if ($total!=1){
 }
 else if($total2==1){
 
-    header('Location:index.php');
+    header('Location:file-upload-download/index.php');
 }
 else{
     echo '<script> swal("Error!", "Incorrect Password", "error");</script>';

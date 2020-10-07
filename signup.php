@@ -85,7 +85,7 @@ if(isset($_POST['submit'])){
 
     <form method="POST" action="">
         <h2 style="color:#fff;">Sign Up</h2>
-        <input type="text" name="name" placeholder=" name"><br><br>
+        <input type="text"require name="name" placeholder=" name"><br><br>
         <input type="text" name="phone" placeholder="phone number"><br><br>
         <input type="text"  name="email" placeholder="email"><br><br>
         <input type="password" name="pass" placeholder="Password"><br><br>
