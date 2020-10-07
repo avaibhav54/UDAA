@@ -2,10 +2,42 @@
 <html lang="en">
 
 <head>
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="logins.css">
     <title>Login Form</title>
 
-  
+    <script>
+     function validate(){
+           var email = document.getElementById("email").value;
+           var passw = document.getElementById("pass").value;
+           var r =/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+           
+           
+
+           if(email=="" ||passw=="")
+           {
+               alert("All fields are required");
+               return false;
+           }
+
+            if(email.match(r))
+            {
+                true;
+            }
+            else{
+                alert("Email entered is invalid")
+                return false;
+            }
+    
+    
+           
+        }
+
+
+    </script>
 </head>
 
 <body>
@@ -40,7 +72,7 @@
 
 <?php
 
-$conn = mysqli_connect("localhost", "root", "", "project");
+$conn = mysqli_connect("localhost", "root", "", "mobileshop");
 if($conn->connect_error){
     die("Connection Failed : ". $conn->connect_error);
 } 

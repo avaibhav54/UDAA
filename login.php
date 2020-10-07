@@ -3,13 +3,28 @@
 <head>
     <link type="text/css" rel="stylesheet" href="wer.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+     function validate(){
+           var email = document.getElementById("email").value;
+           var passw = document.getElementById("pass").value;
+        
+
+         
+          
+    
+    
+           
+        }
+
+
+    </script>
 </head>
 <body>
     <div class="signin">
         <form method ="POST" action="">
             <h2 style="color:white">Log In</h2>
-        <input type ="text" name="email" placeholder="email"/>
-        <input type="password" name="pass" placeholder="Password"><br><br>
+        <input type ="text" id="email"name="email" placeholder="email"/>
+        <input type="password"id="pass" name="pass" placeholder="Password"><br><br>
 <br><br>
 
 <button type="submit" name="submit">Log in</button>
@@ -49,6 +64,15 @@ $email=$_POST[ 'email'];
 
 $pass=$_POST['pass'];
 
+if($email=="" || $pass=="")
+{
+
+    echo '<script> swal("Error!", "All fielda are required", "error");</script>';
+    
+}
+
+else{
+
 $query="select * from login where email='$email' ";
 
 $query2="select * from login where email='$email' && pass='$pass'";
@@ -72,6 +96,7 @@ else if($total2==1){
 }
 else{
     echo '<script> swal("Error!", "Incorrect Password", "error");</script>';
+}
 }
 }
 ?>
